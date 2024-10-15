@@ -1,1 +1,2 @@
 *.safetensors filter=lfs diff=lfs merge=lfs -text
+gemma-2-9b-0.71540-1.5/adapter_model.safetensors filter=lfs diff=lfs merge=lfs -text
