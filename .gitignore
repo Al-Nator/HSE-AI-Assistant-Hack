@@ -1,0 +1,9 @@
+.idea/
+__pycache__/
+.venv/
+venv/
+.env
+
+**data_full.csv
+.gitkeep
+!app/data
