@@ -63,6 +63,7 @@ conda activate unsloth_env && python3 main.py
 │           ├── solutions.xlsx
 │           ├── tasks.xlsx
 │           └── tests.xlsx
+├── gemma-2-9b-0.71540-1.5 <------------- Модель
 ├── main.py <---------------------------- [ВАЖНО] Именно этот скрипт мы будем запускать при проверке ваших решений. Он должен генерировать финальный сабмит.
 ├── notebooks
 │   └── yandexgpt.ipynb

@@ -1,9 +1,13 @@
 .idea/
-__pycache__/
+**__pycache__/
 .venv/
 venv/
 .env
 
-**data_full.csv
+**data_full*.csv
+outputs/
+old-models/
 .gitkeep
 !app/data
+
+prep-orig.ipynb

@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     gen_files()
 
-    gemma = Gemma()
+    gemma = Gemma(model_name='gemma-2-9b-0.7846-12')
 
     def predict(row: pd.Series) -> str:
         return gemma.ask(row)

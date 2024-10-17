@@ -5,7 +5,7 @@ from unsloth import FastLanguageModel
 
 
 class Gemma(BaseModel):
-    def __init__(self, max_tokens: int = 2048) -> None:
+    def __init__(self, model_name, max_tokens: int = 2048) -> None:
         super().__init__('')
         self.prompt = '''### INSTRUCTION:
 {}
@@ -30,7 +30,7 @@ class Gemma(BaseModel):
 {}'''
 
         self.model, self.tokenizer = FastLanguageModel.from_pretrained(
-            model_name = "gemma-2-9b-0.71540-1.5",  #  "gemma-2-9b-0.71540-1.5", "gemma-2-9b", "google/gemma-2-9b-it"
+            model_name = model_name,
             max_seq_length = max_tokens,
             dtype = None,
             load_in_4bit = True,
