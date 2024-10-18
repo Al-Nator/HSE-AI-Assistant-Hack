@@ -34,7 +34,7 @@ cd HSE-AI-Assistant-Hack
 docker build -t kekwak/docker-app:latest .
 docker run -v "$(pwd):/app" -v "$(pwd)/data:/app/data" -p 8000:8000 --gpus all --rm kekwak/docker-app:latest
 ```
-или скачать котовый образ:
+или скачать готовый образ:
 ```bash
 docker compose up --pull always
 ```
