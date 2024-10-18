@@ -26,4 +26,4 @@ RUN conda run -n unsloth_env pip install transformers==4.45.1 --force-reinstall
 
 EXPOSE 8000
 
-CMD ["bash", "-c", "source /root/miniconda3/etc/profile.d/conda.sh && conda activate unsloth_env && python3 main.py"]
+CMD ["bash", "-c", "source /root/miniconda3/etc/profile.d/conda.sh && conda activate unsloth_env && python3 -u main.py"]

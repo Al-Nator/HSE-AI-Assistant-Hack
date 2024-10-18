@@ -8,12 +8,13 @@ services:
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
+      - PYTHONUNBUFFERED=1
     volumes:
       - .:/app
       - ./data:/app/data
     ports:
       - "8000:8000"
-    command: bash -c "source /root/miniconda3/etc/profile.d/conda.sh && conda activate unsloth_env && python3 main.py"
+    # command: bash -c "source /root/miniconda3/etc/profile.d/conda.sh && conda activate unsloth_env && python3 main.py"
     
     deploy:
       mode: replicated

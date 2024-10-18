@@ -4,8 +4,6 @@ import pandas as pd
 import torch
 from transformers import BertModel, BertTokenizer
 
-import tqdm
-
 print("Loading models...", end="")
 model_name = "DeepPavlov/rubert-base-cased-sentence"
 tokenizer = BertTokenizer.from_pretrained(model_name)
@@ -32,13 +30,14 @@ def embedding2string(embedding: torch.Tensor) -> str:
 def generate_submit(test_solutions_path: str, predict_func: Callable, save_path: str, use_tqdm: bool = True) -> None:
     test_solutions = pd.read_csv(test_solutions_path, index_col=0)
     bar = range(len(test_solutions))
-    # if use_tqdm:
-    #     import tqdm
+    if use_tqdm:
+        import tqdm
 
-    #     bar = tqdm.tqdm(bar, desc="Predicting")
+        bar = tqdm.tqdm(bar, desc="Predicting")
 
     submit_df = pd.DataFrame(columns=["solution_id", "author_comment", "author_comment_embedding"])
-    for i in tqdm.tqdm(bar, desc="Predicting"):
+    for i in bar:
+        print(i, '/', len(test_solutions))
         idx = test_solutions.index[i]
         solution_row = test_solutions.iloc[i]
 
