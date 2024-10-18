@@ -7,7 +7,6 @@ venv/
 **data_full*.csv
 outputs/
 old-models/
-.gitkeep
 !app/data
 
 prep-orig.ipynb

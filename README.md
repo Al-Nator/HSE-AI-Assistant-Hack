@@ -16,13 +16,17 @@
 ## Запуск в контейнере
 
 ```bash
-docker compose up
+git clone https://github.com/kekwak/HSE-AI-Assistant-Hack.git
+cd HSE-AI-Assistant-Hack
 ```
-или
+\+
 ```bash
 docker build -t kekwak/docker-app:latest .
 docker run -v "$(pwd):/app" -v "$(pwd)/data:/app/data" -p 8000:8000 --gpus all --rm kekwak/docker-app:latest
-# docker build -t aasdadcxdgfwsds/test-hello:latest .
+```
+или
+```bash
+docker compose up --pull always
 ```
 
 ## Запуск в локальной среде
