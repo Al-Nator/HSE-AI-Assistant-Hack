@@ -13,13 +13,15 @@
 Тестирующая система: https://dsworks.ru/champ/hse-2024-october \
 Лендинг: https://www.hse.ru/ai-assistant-hack-python/
 
-## Запуск в контейнере
-
+## Загрузка
+**!!! НЕ КАЧАТЬ АРХИВОМ С САЙТА !!!**
 ```bash
 git clone https://github.com/kekwak/HSE-AI-Assistant-Hack.git
 cd HSE-AI-Assistant-Hack
 ```
-\+
+
+## Запуск в контейнере
+
 ```bash
 docker build -t kekwak/docker-app:latest .
 docker run -v "$(pwd):/app" -v "$(pwd)/data:/app/data" -p 8000:8000 --gpus all --rm kekwak/docker-app:latest
