@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/678e6e14-ae3e-4aa6-a968-a81a333674e9)
+
 # Команда MMG (MMGroup) – AI Assistant Hack: Python
 
 ## Состав
