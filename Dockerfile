@@ -31,7 +31,7 @@ RUN pip install --no-deps \
     accelerate==1.0.1 \
     bitsandbytes==0.44.1
 
-RUN pip install transformers==4.45.1 --force-reinstall
+RUN pip install transformers==4.45.1 huggingface-hub==0.25.0 --force-reinstall
 
 ENV PYTHONUNBUFFERED=1
 ENV TORCHDYNAMO_DISABLE=1
