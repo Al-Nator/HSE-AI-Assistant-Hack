@@ -2,9 +2,10 @@ version: '3.8'
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: aasdadcxdgfwsds/test-hello:latest
     runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all

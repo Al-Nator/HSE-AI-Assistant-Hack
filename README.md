@@ -22,6 +22,7 @@ docker compose up
 ```bash
 docker build -t kekwak/docker-app:latest .
 docker run -v "$(pwd):/app" -v "$(pwd)/data:/app/data" -p 8000:8000 --gpus all --rm kekwak/docker-app:latest
+# docker build -t aasdadcxdgfwsds/test-hello:latest .
 ```
 
 ## Запуск в локальной среде
