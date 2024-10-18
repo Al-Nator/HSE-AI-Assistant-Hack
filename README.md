@@ -52,7 +52,6 @@ conda activate unsloth_env && python3 main.py
 ```
 
 ## Структура проекта
-
 ```
 .
 ├── app
