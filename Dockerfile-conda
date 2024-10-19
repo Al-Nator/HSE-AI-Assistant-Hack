@@ -22,7 +22,7 @@ COPY . /app
 RUN conda env create -f environment.yml
 RUN conda run -n unsloth_env pip install "unsloth @ git+https://github.com/unslothai/unsloth.git@79a2112ca4a775ce0b3cb75f5074136cb54ea6df"
 RUN conda run -n unsloth_env pip install --no-deps trl peft accelerate bitsandbytes
-RUN conda run -n unsloth_env pip install transformers==4.45.1 --force-reinstall
+RUN conda run -n unsloth_env pip install transformers==4.45.1 huggingface-hub==0.25.0 --force-reinstall
 
 EXPOSE 8000
 

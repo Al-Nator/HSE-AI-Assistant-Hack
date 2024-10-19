@@ -38,6 +38,11 @@ docker run -v "$(pwd):/app" -v "$(pwd)/data:/app/data" -p 8000:8000 --gpus all -
 ```bash
 docker compose up --pull always
 ```
+а также запуск через альтернативный докерфайл:
+```bash
+docker build -f Dockerfile-conda -t kekwak/docker-app:latest-conda .
+docker run -v "$(pwd):/app" -v "$(pwd)/data:/app/data" -p 8000:8000 --gpus all --rm kekwak/docker-app:latest-conda
+```
 
 ## Запуск в локальной среде
 В проекте исспользуется анаконда.
