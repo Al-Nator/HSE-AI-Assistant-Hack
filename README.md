@@ -32,23 +32,23 @@
 <img width="655" alt="image_scr_1" src="https://github.com/user-attachments/assets/26da6c73-9004-47c4-856a-58416e4ae644"> | <img width="653" alt="image_scr_2" src="https://github.com/user-attachments/assets/ae01dca0-9a79-4a1d-9923-e3fdb8915126">
 
 ## Загрузка
-```bash
+```nushell
 git clone https://github.com/kekwak/HSE-AI-Assistant-Hack.git
 cd HSE-AI-Assistant-Hack
 ```
 
 ## Запуск в контейнере
 Собрать контейнер самому:
-```bash
+```nushell
 docker build -t kekwak/docker-app:latest .
 docker run -v "$(pwd):/app" -v "$(pwd)/data:/app/data" -p 8000:8000 --gpus all --rm kekwak/docker-app:latest
 ```
 или скачать готовый образ:
-```bash
+```nushell
 docker compose up --pull always
 ```
 а также запуск через альтернативный докерфайл:
-```bash
+```nushell
 docker build -f Dockerfile-conda -t kekwak/docker-app:latest-conda .
 docker run -v "$(pwd):/app" -v "$(pwd)/data:/app/data" -p 8000:8000 --gpus all --rm kekwak/docker-app:latest-conda
 ```
@@ -57,7 +57,7 @@ docker run -v "$(pwd):/app" -v "$(pwd)/data:/app/data" -p 8000:8000 --gpus all -
 В проекте исспользуется анаконда.
 * При установке зависимостей этим способом могут возникнуть проблемы.
 
-```bash
+```nushell
 conda env create -f environment.yml
 conda run -n unsloth_env pip install "unsloth @ git+https://github.com/unslothai/unsloth.git@79a2112ca4a775ce0b3cb75f5074136cb54ea6df"
 conda run -n unsloth_env pip install --no-deps trl peft accelerate bitsandbytes
@@ -66,7 +66,7 @@ conda activate unsloth_env && python3 main.py
 ```
 
 ## Структура проекта
-```
+```nushell
 .
 ├── app
 │   ├── __init__.py
