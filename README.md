@@ -11,9 +11,9 @@
 
 ## Ссылки
 Лендинг: https://www.hse.ru/ai-assistant-hack-python \
-Статья о хакатоне: https://www.hse.ru/news/978685929.html
+Статья о хакатоне: https://www.hse.ru/news/978685929.html \
 Репозиторий: https://github.com/werserk/hse-aiahp-baseline \
-Тестирующая система: https://dsworks.ru/champ/hse-2024-october \
+Тестирующая система: https://dsworks.ru/champ/hse-2024-october
 
 ## Состав
 * **Денис Маликов** – Капитан, DA
