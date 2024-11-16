@@ -10,10 +10,10 @@
 Мы хотим, чтобы алгоритм играл роль личного ментора, который сможет проанализировать код на предмет не только синтаксических ошибок (которые сможет выявить и среда разработки, и линтер, и др.), но и логические ошибки. Он будет направлять мысль в нужное русло, указывать на необходимость перепроверки какой-либо логики в коде, но не будет писать код за него.
 
 ## Ссылки
-Лендинг: https://www.hse.ru/ai-assistant-hack-python \
-Статья о хакатоне: https://www.hse.ru/news/978685929.html \
-Репозиторий: https://github.com/werserk/hse-aiahp-baseline \
-Тестирующая система: https://dsworks.ru/champ/hse-2024-october
+Лендинг: [www.hse.ru/ai-assistant-hack-python](https://www.hse.ru/ai-assistant-hack-python) \
+Статья о хакатоне: [www.hse.ru/news/978685929.html](https://www.hse.ru/news/978685929.html) \
+Репозиторий: [github.com/werserk/hse-aiahp-baseline](https://github.com/werserk/hse-aiahp-baseline) \
+Тестирующая система: [dsworks.ru/champ/hse-2024-october](https://dsworks.ru/champ/hse-2024-october)
 
 ## Состав
 * **Денис Маликов** – Капитан, DA
