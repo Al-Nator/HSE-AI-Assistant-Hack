@@ -33,7 +33,7 @@
 
 ## Загрузка
 ```nushell
-git clone https://github.com/kekwak/HSE-AI-Assistant-Hack.git
+git clone --recurse-submodules https://github.com/kekwak/HSE-AI-Assistant-Hack.git
 cd HSE-AI-Assistant-Hack
 ```
 
