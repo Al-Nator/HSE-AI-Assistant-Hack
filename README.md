@@ -12,7 +12,7 @@
 ## Ссылки
 Лендинг: [www.hse.ru/ai-assistant-hack-python](https://www.hse.ru/ai-assistant-hack-python) \
 Статья о хакатоне: [www.hse.ru/news/978685929.html](https://www.hse.ru/news/978685929.html) \
-Статья от FA: https://habr.com/ru/companies/fa/articles/881108/
+Статья от FA: https://habr.com/ru/companies/fa/articles/881108/ \
 Репозиторий: [github.com/werserk/hse-aiahp-baseline](https://github.com/werserk/hse-aiahp-baseline) \
 Тестирующая система: [dsworks.ru/champ/hse-2024-october](https://dsworks.ru/champ/hse-2024-october)
 
